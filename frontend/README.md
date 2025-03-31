@@ -1,70 +1,192 @@
-# Getting Started with Create React App
+Food Delivery App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📌 Introduction
 
-## Available Scripts
+The Food Delivery App is a modern web-based application designed to facilitate seamless food ordering and delivery services. It allows users to browse restaurants, place orders, track deliveries, and make payments online. The application ensures a smooth and intuitive experience for both customers and restaurant owners.
 
-In the project directory, you can run:
+🚀 Features
 
-### `npm start`
+User authentication (Login/Signup)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Browse and search for restaurants & dishes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Add items to the cart and place orders
 
-### `npm test`
+Live order tracking
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Secure online payments
 
-### `npm run build`
+Admin dashboard for managing restaurants & orders
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend: React.js / HTML / CSS / JavaScript
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Backend: Node.js / Express.js
 
-### `npm run eject`
+Database: MongoDB
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Authentication: JWT / Firebase Auth
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Payment Gateway: Stripe / Razorpay
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Deployment: AWS / Vercel / Heroku
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+📋 Prerequisites
 
-## Learn More
+Ensure you have the following installed before proceeding:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Node.js (v14 or later) - Download here
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+MongoDB (if running locally) - Download here
 
-### Code Splitting
+Git - Download here
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+⚡ Installation Guide
 
-### Analyzing the Bundle Size
+1️⃣ Clone the Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  git clone https://github.com/RAVIMAKANI9/Food-delivery.git
+  cd Food-delivery
 
-### Making a Progressive Web App
+2️⃣ Install Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Frontend
 
-### Advanced Configuration
+  cd client
+  npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Backend
 
-### Deployment
+  cd server
+  npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3️⃣ Set Up Environment Variables
 
-### `npm run build` fails to minify
+Create a .env file in the server directory and add the following:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+STRIPE_SECRET_KEY=your_stripe_api_key
+
+4️⃣ Start the Application
+
+Run the Backend Server
+
+  cd server
+  npm start
+
+Run the Frontend
+
+  cd client
+  npm start
+
+5️⃣ Open in Browser
+
+Visit: http://localhost:3000
+
+📖 API Endpoints
+
+Method
+
+Endpoint
+
+Description
+
+POST
+
+/api/auth/signup
+
+Register a new user
+
+POST
+
+/api/auth/login
+
+Login user
+
+GET
+
+/api/restaurants
+
+Get all restaurants
+
+POST
+
+/api/orders
+
+Place an order
+
+GET
+
+/api/orders/:id
+
+Get order details
+
+🛠️ Implementation Details
+
+🔹 Frontend
+
+Built with React.js for a dynamic user experience.
+
+Uses Redux for state management.
+
+Axios for handling API calls.
+
+🔹 Backend
+
+REST API developed with Node.js & Express.js.
+
+MongoDB stores user data, orders, and restaurant details.
+
+JWT Authentication for security.
+
+Stripe/Razorpay for payment processing.
+
+🚀 Deployment
+
+Frontend Deployment
+
+Deploy on Vercel or Netlify:
+
+  npm run build
+
+Upload the build/ folder to your preferred hosting service.
+
+Backend Deployment
+
+Use Heroku or AWS EC2:
+
+  heroku create
+  git push heroku main
+
+📝 Contribution Guidelines
+
+Fork the repository
+
+Create a feature branch (git checkout -b feature-name)
+
+Commit changes (git commit -m "Added new feature")
+
+Push to GitHub (git push origin feature-name)
+
+Create a Pull Request (PR)
+
+📞 Contact
+
+For any queries, feel free to reach out:
+
+Author: Makani Ravi
+
+Email: ravi.makani99999@gmail.com
+
+GitHub: RAVIMAKANI9
+
+⭐ Acknowledgments
+
+Special thanks to contributors and open-source libraries that made this project possible!
+
+Like the project? Give it a ⭐ on GitHub!
+
+Thank you
