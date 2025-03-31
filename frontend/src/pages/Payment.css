@@ -1,0 +1,123 @@
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.payment-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form input {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    width: 100%;
+}
+
+.payment-form button {
+    margin-top: 16px;
+    padding: 12px;
+    border: none;
+    background-color: #ff6347;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-form button:hover {
+    background-color: #e55337;
+}
+.payment {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .payment-methods button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+  }
+  
+  .payment-methods button:hover {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  .upi-section, .card-section, .netbanking-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  input, select {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .pay-now {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pay-now:hover {
+    background-color: #45a049;
+  }
+  .payment-page {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.payment-options button {
+    margin-bottom: 15px;
+}
+
+.payment-form input {
+    margin-top: 5px;
+}
+
+.payment-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cod-info {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6f00;
+    padding: 20px 20px;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.navbar div a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar div a:hover {
+    color: #ffd700;
+} 
+.profile-button {
+    background-color: black;
+    color: #ff6f00;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+

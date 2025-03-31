@@ -1,0 +1,49 @@
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://res.cloudinary.com/defw5kgny/image/upload/v1743079874/xik91k9p1bfsuycny2ur.jpg') center/cover no-repeat;
+}
+
+.welcome-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 12px;
+    color: white;
+    width: 400px;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #ff6f00;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #e65a00;
+}
+
+.btn-secondary {
+    background: #333;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #555;
+}

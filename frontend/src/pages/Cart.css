@@ -1,0 +1,45 @@
+.cart-page {
+    padding: 20px;
+    position: relative;
+}
+
+.cart-items {
+    max-height: 500px; /* Adjust height as needed */
+    overflow-y: auto; /* Allows scrolling if items exceed the height */
+    margin-bottom: 100px; /* Make space for the checkout section */
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensures all images fit within the defined size */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkout-section {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

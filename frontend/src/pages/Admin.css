@@ -1,0 +1,75 @@
+.admin-address {
+    white-space: pre-wrap;
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+.admin-address br {
+    display: block;
+    content: "";
+    margin-bottom: 0.3rem;
+}
+
+.table td {
+    vertical-align: middle;
+}
+.admin-address {
+    white-space: pre-wrap;
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+.admin-address br {
+    display: block;
+    content: "";
+    margin-bottom: 0.3rem;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.list-unstyled li {
+    padding: 3px 0;
+}
+.management-section {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.category-form .input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.category-badge {
+    background: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.current-categories {
+    margin-top: 20px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.admin-title {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.menu-preview {
+    margin-top: 20px;
+}

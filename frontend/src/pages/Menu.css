@@ -1,0 +1,353 @@
+/* Menu.css */
+:root {
+    --primary-color: #ff6f00;
+    --secondary-color: #2d3436;
+    --background-light: #ffffff;
+    --text-dark: #2d3436;
+    --text-light: #636e72;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: var(--text-dark);
+  }
+  
+  .menu-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    min-height: 100vh;
+  }
+  
+  /* Header Styles */
+  .menu-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .menu-header h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Search Bar */
+  .search-filter {
+    position: relative;
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .search-filter input {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  .search-filter input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow);
+  }
+  
+  .clear-search {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-light);
+  }
+  
+  /* Category Filters */
+  .category-section {
+    margin: 2rem 0;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .filter-buttons button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    background: #fff;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+  }
+  
+  .filter-buttons button.active {
+    background: var(--primary-color);
+    color: white;
+  }
+  
+  /* Menu Items Grid */
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .menu-item-card {
+    background: var(--background-light);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+  
+  .menu-item-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .item-image {
+    height: 140px;
+    overflow: hidden;
+  }
+  
+  .item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+  
+  .item-details {
+    padding: 1.5rem;
+  }
+  
+  .item-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+  }
+  
+  .item-category {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+  .item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+  }
+  
+  .add-to-cart-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+  }
+  
+  .add-to-cart-btn:hover {
+    background: #e63946;
+  }
+  
+  /* No Items Found */
+  .no-items-found {
+    text-align: center;
+    padding: 4rem 0;
+    grid-column: 1 / -1;
+  }
+  
+  .no-items-found img {
+    max-width: 300px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Modal Styles */
+  .custom-modal .modal-content {
+    border-radius: var(--border-radius);
+    border: none;
+  }
+  
+  .modal-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .added-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .added-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+  
+  .modal-btn {
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu-page {
+      padding: 1rem;
+    }
+  
+    .menu-header h1 {
+      font-size: 2rem;
+    }
+  
+    .menu-items {
+      grid-template-columns: 1fr;
+    }
+  
+    .filter-buttons {
+      gap: 0.5rem;
+    }
+  
+    .filter-buttons button {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .search-filter input {
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-header h1 {
+      font-size: 1.75rem;
+    }
+  
+    .item-image {
+      height: 150px;
+    }
+  
+    .add-to-cart-btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-light);
+    margin-top: 4rem;
+    border-top: 1px solid #eee;
+  }
+  /* Add to existing Order.css */
+.order-page {
+    padding-top: 280px; /* navbar height */
+    padding-bottom: 60px; /* footer height */
+    min-height: calc(100vh - 140px); /* viewport height - (nav + footer heights) */
+    position: relative;
+    z-index: 0;
+}
+
+/* Ensure body has proper spacing */
+body {
+    margin: 0;
+    overflow-y: auto;
+}
+
+/* Existing navbar CSS - add this */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Existing footer CSS - add this */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+/* Add to Order.css */
+.order-page {
+    padding-top: 6rem; /* Increased top padding */
+    padding-bottom: 4rem; /* Reduced bottom padding */
+    min-height: calc(100vh - 10rem);
+    position: relative;
+    z-index: 0;
+    margin-top: 250px; /* Direct offset for navbar height */
+}
+
+/* Add specific header margin */
+.order-page .d-flex.justify-content-between.align-items-center.mb-4 {
+    margin-top: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Ensure cards stay below navbar */
+.card {
+    position: relative;
+    z-index: 0;
+    margin-top: 1rem;
+}
+
+/* Existing navbar CSS - ensure this is set */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px; /* Explicit height */
+    z-index: 100;
+}
+
+/* Existing footer CSS */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+}
