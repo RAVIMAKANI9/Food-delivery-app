@@ -42,12 +42,12 @@ cd Food-delivery
 ### 2️⃣ Install Dependencies
 #### Frontend
 ```sh
-cd client
+cd frontend
 npm install
 ```
 #### Backend
 ```sh
-cd server
+cd my-backend
 npm install
 ```
 
