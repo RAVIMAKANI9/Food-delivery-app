@@ -19,9 +19,7 @@ The Food Delivery App is a modern web-based application designed to facilitate s
 - Frontend: React.js / HTML / CSS / JavaScript
 - Backend: Node.js / Express.js
 - Database: MongoDB
-- Authentication: JWT / Firebase Auth
-- Payment Gateway: Stripe / Razorpay
-- Deployment: AWS / Vercel / Heroku
+- Authentication: JWT
 
 ---
 
